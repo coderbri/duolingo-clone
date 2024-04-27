@@ -1,0 +1,7 @@
+
+27 Apr 2024 - 00:35
+- initialized repo with README.md, notes.md, and this version_log.md
+- notes.md will contain my insights from what I learned creating this project
+- this version_log.txt will be a space to make a summary of what i accomplished in this coding session and what bugs I resolved as I encounter them
+
+____
