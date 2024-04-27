@@ -4,4 +4,13 @@
 - notes.md will contain my insights from what I learned creating this project
 - this version_log.txt will be a space to make a summary of what i accomplished in this coding session and what bugs I resolved as I encounter them
 
+27 Apr 2024 - 02:30
+- Installed Next.js with required dependencies (Node v21.4.0).
+- Created project structure with `create-next-app`.
+- Initialized shadcn/ui for components.
+- Customized font to "Nunito" in `layout.tsx`.
+- Cleared default page content in `page.tsx`.
+- Added button component using `shadcn-ui`.
+- Imported and used button component in `page.tsx`.
+
 ____
