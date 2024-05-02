@@ -13,4 +13,10 @@
 - Added button component using `shadcn-ui`.
 - Imported and used button component in `page.tsx`.
 
+2 May 2024 - 02:50
+- Established routes within Next.js application for button component library: /buttons.
+- Created `buttons` route with `page.tsx` file.
+- Exported default component from `buttons/page.tsx` to prevent "Unhandled Runtime Error".
+- Created button component library with baseline configurations and recreated variants.
+
 ____
