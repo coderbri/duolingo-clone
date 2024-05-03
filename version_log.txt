@@ -25,4 +25,12 @@
   - Established route groups for organizational purposes with (marketing)/ folder.
   - Created reusable layout components for header and footer.
 
+3 May 2024 - 16:15
+- Set up authentication using Clerk:
+  - Created a Clerk application named "Lingo".
+  - Added ClerkProvider in `layout.tsx`.
+  - Integrated Clerk components for authentication in the header:
+    - Used `ClerkLoading` component with a `Loader` to display a loading indicator while authentication state is checked.
+    - Utilized components such as `SignInButton`, `SignedIn`, `SignedOut`, and `UserButton` to manage authentication states and provide UI elements for signing in, signing up, and displaying user information in the header.
+
 ____
