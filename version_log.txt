@@ -19,4 +19,10 @@
 - Exported default component from `buttons/page.tsx` to prevent "Unhandled Runtime Error".
 - Created button component library with baseline configurations and recreated variants.
 
+3 May 2024 - 02:00
+- Created Marketing Skeleton:
+  - Focused on preparing the marketing or landing page.
+  - Established route groups for organizational purposes with (marketing)/ folder.
+  - Created reusable layout components for header and footer.
+
 ____
