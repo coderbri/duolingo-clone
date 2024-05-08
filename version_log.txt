@@ -33,4 +33,6 @@
     - Used `ClerkLoading` component with a `Loader` to display a loading indicator while authentication state is checked.
     - Utilized components such as `SignInButton`, `SignedIn`, `SignedOut`, and `UserButton` to manage authentication states and provide UI elements for signing in, signing up, and displaying user information in the header.
 
+8 May 2024 - 01:55
+- Adjusted spacing between buttons on the hero page.
 ____
