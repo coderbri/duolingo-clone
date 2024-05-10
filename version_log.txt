@@ -38,4 +38,13 @@
 
 8 May 2024 - 23:45
 - Implemented footer component with language navigation options
+
+10 May 2024 - 02:30
+- Implemented the main layout for the learn platform, comprising layout.tsx and learn/page.tsx files.
+- Developed the responsive sidebar component to ensure accessibility on both desktop and mobile layouts.
+- Enabled the sidebar to remain fixed on the left side of the screen and implemented functionality for mobile sidebar triggering.
+- Built the mobile header and sidebar components to optimize viewing on smaller screens.
+- Refactored sidebar items as reusable components and added dynamic behavior for active navigation highlighting.
+- Integrated a logout button using Clerk imports for user authentication.
+
 ____
