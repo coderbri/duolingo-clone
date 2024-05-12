@@ -15,7 +15,6 @@ In this section of the project, we'll enhance the **layout.tsx** file in the `ma
 
 Initially, we maximize the breakpoint of the main layout to accommodate larger screens:
 
-
 ### `(main)/layout.tsx`
 
 This defines the overall structure of the learn platform's layout, including the sidebar, mobile header, and main content area. Maximizes the breakpoint for larger screens to optimize viewing.
@@ -46,6 +45,13 @@ const MainLayout = ({
 
 export default MainLayout;
 ```
+
+<div align="center">
+<img src="./imgs/07-Learn_Page_Responsiveness-Demo.GIF"
+    alt="Learn Page Responsiveness Demo"
+    width="450px" height="auto">
+</div>
+
 
 ### 1. First Component: Sticky Wrapper
 
@@ -101,6 +107,12 @@ const LearnPage = () => {
 
 export default LearnPage;
 ```
+
+<div align="center">
+<img src="./imgs/07-Sticky_Wrapper-Demo.GIF"
+    alt="Scrolling through Learn Page with Sticky Wrappers"
+    width="450px" height="auto">
+</div>
 
 
 ### 2. Second Component: The Feed Wrapper
@@ -177,6 +189,12 @@ export const UserProgress = ({
     );
 };
 ```
+
+<div align="center">
+<img src="./imgs/07-Learn_Page_Wrappers.png"
+    alt="Learn Page with Wrappers"
+    width="450px" height="auto">
+</div>
 
 ## Summary
 
