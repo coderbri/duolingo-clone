@@ -47,4 +47,8 @@
 - Refactored sidebar items as reusable components and added dynamic behavior for active navigation highlighting.
 - Integrated a logout button using Clerk imports for user authentication.
 
+11 May 2024 - 23:30
+- Updated Main Layout (`layout.tsx`) in the `main/` directory to optimize for larger screens.
+- Added `StickyWrapper`, `FeedWrapper`, `Header`, and `UserProgress` components to enhance the learn page's layout and user experience.
+
 ____
