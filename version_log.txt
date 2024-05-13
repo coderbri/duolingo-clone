@@ -51,4 +51,13 @@
 - Updated Main Layout (`layout.tsx`) in the `main/` directory to optimize for larger screens.
 - Added `StickyWrapper`, `FeedWrapper`, `Header`, and `UserProgress` components to enhance the learn page's layout and user experience.
 
+13 May 2024 - 03:40
+- Created and connected a new database using Neon, a cloud-based database service.
+- Set up Drizzle ORM to interact with the Neon database in your React project.
+- Configured the database directory and schema files for defining database tables and fields.
+- Configured Drizzle to use the specified schema and database credentials.
+- Used the `npm run db:push` command to push the schema changes to the Neon database.
+- Verified the changes by checking the Neon dashboard for the newly added table.
+- Ran the `npm run db:studio` command to access the Drizzle Studio and manage the database visually.
+- Added an entry to the database using Drizzle Studio, confirming successful database interaction.
 ____
