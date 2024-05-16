@@ -60,4 +60,12 @@
 - Verified the changes by checking the Neon dashboard for the newly added table.
 - Ran the `npm run db:studio` command to access the Drizzle Studio and manage the database visually.
 - Added an entry to the database using Drizzle Studio, confirming successful database interaction.
+
+14 May 2024 - __:__
+- Began working on Courses Page:
+- Created additional courses in the database schema.
+- Established a connection to the Drizzle Studio for database management.
+- Developed a query to fetch courses from the database asynchronously.
+- Implemented components to render course lists and individual course cards.
+- Enabled dynamic rendering of course data on the Courses Page.
 ____
