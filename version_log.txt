@@ -68,4 +68,14 @@
 - Developed a query to fetch courses from the database asynchronously.
 - Implemented components to render course lists and individual course cards.
 - Enabled dynamic rendering of course data on the Courses Page.
+
+17 May 2024 - 23:59
+- Created `userProgress` table in schema to track user progress in courses.
+- Established relationships between `courses` and `userProgress` tables.
+- Implemented `getUserProgress` query to retrieve user progress data.
+- Updated `courses/page.tsx` to include user progress data in the `List` component.
+- Updated `learn/page.tsx` to redirect users to the courses page if no active course is found.
+- Added a Loader component to improve user experience during redirections.
+- Created server action `upsertUserProgress` to handle user progress updates and insertions.
+- Enhanced course selection logic in `courses/list.tsx` with `useTransition` for better state management.
 ____
