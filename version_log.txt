@@ -78,4 +78,9 @@
 - Added a Loader component to improve user experience during redirections.
 - Created server action `upsertUserProgress` to handle user progress updates and insertions.
 - Enhanced course selection logic in `courses/list.tsx` with `useTransition` for better state management.
+
+18 May 2024 - 02:30
+- Added Sonner package to handle flashing error messages to users.
+- Imported Toaster into app root's layout and Sonner's toast function in the List component to display error messages to users.
+- Updated the startTransition() function in the List component to catch errors and display error messages using Sonner's `toast.error()` function.
 ____

@@ -15,6 +15,7 @@ For the next part of the project, we'll need a new schema model for user progres
 - [Establishing User Progress Creation](#establishing-user-progress-creation)
     - [Server Actions Folder](#server-actions-folder)
     - [Updating the List Component](#updating-the-list-component)
+- [Importing `sonner`](#importing-sonner)
 
 ## Creating the User Progress Schema
 
@@ -391,4 +392,67 @@ With the command `npm run db:studio`, we can see our `user_progress` table updat
 <img src="./imgs/10-User_Progress_Table.png"
     alt="User Progress Table with Drizzle Studio"
     width="600px" height="auto">
+</div>
+
+
+## Importing `sonner`
+
+We'll add another package called Sonner. This is useful for when we need to flash an error message to the user. We start by installing it with this command:
+
+```bash
+npx shadcn-ui@latest add sonner
+✔ Done.
+```
+
+Go to the root app layout and import `Toaster` to use as a component.
+
+#### `app/layout.tsx`
+
+```tsx
+// ... omitted imports
+import { Toaster } from "@/components/ui/sonner";
+
+// ... omitted code
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <>
+      {/* ... */}
+        <body className={font.className}>
+          <Toaster />
+          {children}
+        </body>
+      {/* ... */}
+    </>
+  );
+}
+```
+
+#### `courses/list.tsx`
+
+Then we'll go to the List component and update the `startTransition()` function, importing `toast` directly from `"sonner"`:
+
+```tsx
+import { toast } from "sonner";
+
+// ... omitted code
+export const List = ({ courses, activeCourseId }: Props) => {
+    // ...
+    startTransition(() => {
+        upsertUserProgress(id)
+            .catch(() => toast.error("Something went wrong."));
+    });
+    
+    return (/* ... */)
+}
+```
+
+<div align="center">
+<img src="./imgs/10-Sonner-Error.png"
+    alt="Error prompted with Toast, Toaster, and Sonner"
+    width="450px" height="auto">
 </div>
