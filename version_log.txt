@@ -97,4 +97,13 @@
 - Applied Drizzle types to the `activeCourse` prop in the `UserProgress` component.
 - Provided troubleshooting steps to resolve errors related to dynamic rendering.
 - Ensured the learn page header dynamically displays the selected course's title.
+
+1 June 2024 - 22:45
+- Added units table and defined its relationship with courses.
+- Created lessons table and established its association with units.
+- Defined challenges table and integrated enum for challenge types.
+- Implemented challenge options table and its relationships.
+- Added challenge progress tracking table and updated relevant relationships.
+- Ensured all relationships are correctly set up for complex queries.
+
 ____
