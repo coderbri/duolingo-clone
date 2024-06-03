@@ -106,4 +106,12 @@
 - Added challenge progress tracking table and updated relevant relationships.
 - Ensured all relationships are correctly set up for complex queries.
 
+2 June 2024 - 20:25
+- Implemented seed script functionality to create units, lessons, challenges, and challenge options in the database.
+- Setup the seed script to delete newly created tables for a clean reset.
+- Created units via the seed script, specifying details like title, description, and order.
+- Generated lessons for the created units, populating them with titles and orders.
+- Established challenges and challenge options, defining question prompts and correct/incorrect options.
+- Prepared backend query getUnits to fetch units along with associated lessons and challenges.
+- Developed frontend rendering logic to display fetched units and lessons on the Learn Page.
 ____
