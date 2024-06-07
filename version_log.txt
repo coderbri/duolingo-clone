@@ -114,4 +114,11 @@
 - Established challenges and challenge options, defining question prompts and correct/incorrect options.
 - Prepared backend query getUnits to fetch units along with associated lessons and challenges.
 - Developed frontend rendering logic to display fetched units and lessons on the Learn Page.
+
+7 June 2024 - 02:00
+- Updated `getUnits` query to filter `challengeProgress` by `userId`, ensuring progress retrieval for a specific user
+- Rendered units and lessons dynamically on the Learn Page, replacing JSON code
+- Built and styled `<Unit />` and `<UnitBanner />` components
+- Created and styled `<LessonButton />` component with progress visualization
+- Seeded additional lessons for testing various statuses
 ____
