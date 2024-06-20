@@ -121,4 +121,15 @@
 - Built and styled `<Unit />` and `<UnitBanner />` components
 - Created and styled `<LessonButton />` component with progress visualization
 - Seeded additional lessons for testing various statuses
+
+20 June 2024 - 16:00
+- Implemented `getCourseProgress` method: Retrieves user progress, units, lessons, and challenges, directing users to their current lesson.
+- Added `getLessons` method: Fetches lesson data based on an optional ID, ensuring data is normalized with a completion status for challenges.
+- Created `getLessonPercentage` method: Calculates the percentage of lesson completion based on user progress and completed challenges.
+- Updated Learn Page: Included data fetching for `courseProgress` and `lessonPercentage` and added checks for course progress existence.
+- Enhanced `<Unit />` component: Updated to include `activeLesson` and `activeLessonPercentage` properties, ensuring lessons are rendered with accurate data.
+- Fixed future lesson completion issue: Adjusted `getUnits` query to ensure future lessons are locked and not marked as completed.
+- Debugging: Ensured accurate rendering and locking of lessons with no challenges in future lessons.
+
+
 ____
