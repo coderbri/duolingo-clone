@@ -133,11 +133,20 @@
 
 21 June 2024 - 22:10
 - Updated the name from plural to singular for the `getLessons` query to `getLesson`.
-
 - Created a new `/lesson` route directory with a `page.tsx` file to fetch lesson and user progress data.
 - Implemented an asynchronous function in the Lesson Page to ensure data validity before rendering or redirecting.
 - Established layout settings in `lesson/layout.tsx` to render lesson content responsively.
 - Developed a `<Quiz />` component to manage lesson data, initializing state for hearts and progress percentage.
 - Built the `Header` component within `<Quiz />`, displaying interactive elements like hearts, a progress bar, and an exit button.
 - Customized the progress bar appearance using the shadcn UI package and appropriate styling.
+
+22 June 2024 - 01:00
+- Installed Necessary Packages: Added `zustand` for state management and `shadcn-ui` for dialog components.
+- SVG Asset Addition: Uploaded `mascot_sad.svg` to the `public/` folder for use in the modal.
+- State Management with Zustand: Created a Zustand store for managing the modal's open/close state.
+- Exit Modal Component: Developed the `ExitModal` component with all necessary imports and state definitions.
+- Client-Side Checks: Ensured the component operates on the client side using `useEffect`.
+- Integrated with Layout: Added the `ExitModal` component to the main layout file to ensure it is available across the application.
+- Header Integration: Linked the Exit Modal to the "X" button in the lesson header to trigger the modal upon click.
+
 ____
