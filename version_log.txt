@@ -149,4 +149,13 @@
 - Integrated with Layout: Added the `ExitModal` component to the main layout file to ensure it is available across the application.
 - Header Integration: Linked the Exit Modal to the "X" button in the lesson header to trigger the modal upon click.
 
+27 June 2024 - 19:05
+- Implemented dynamic challenge question retrieval and display using `useState`.
+- Created and styled `QuestionBubble` component for "SELECT" type questions.
+- Developed `Challenge` component to render options based on challenge type.
+- Verified challenge options rendering as JSON strings and transitioned to `Card` component.
+- Created and styled `Card` component for displaying challenge options with dynamic rendering.
+- Applied conditional styling to `Card` component for selected, correct, and incorrect states.
+- Verified proper rendering and data display through visual checks and debugging.
+
 ____

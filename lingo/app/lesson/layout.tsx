@@ -10,6 +10,6 @@ const LessonLayout = ({ children }: Props) => {
             </div>
         </div>
     );
-}
+};
 
 export default LessonLayout;
