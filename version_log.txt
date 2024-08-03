@@ -165,4 +165,15 @@
 - Added keyboard navigation support for selecting challenge options.
 - Implemented visual indicators and state management in the `Quiz` component for selected options.
 
+2 August 2024 - 23:00
+- Created Footer component to confirm user's choice and validate answers
+- Added props: disabled, status, onCheck, lessonId for Footer component
+- Implemented dynamic styling for Footer based on challenge status
+- Integrated useKey and useMedia hooks for functionality and responsiveness
+- Rendered Button component with dynamic messages and styles
+- Tested Footer component with various statuses (i.e., correct, wrong, none, completed) to ensure proper functionality and UI
+```
+
+3 August 2024 - __:__
+- 
 ____

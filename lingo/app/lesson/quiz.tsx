@@ -5,6 +5,7 @@ import { useState } from "react";
 import { challengeOptions, challenges } from "@/db/schema";
 
 import { Header } from "./header";
+import { Footer } from "./footer";
 import { Challenge } from "./challenge";
 import { QuestionBubble } from "./question-bubble";
 
@@ -81,6 +82,11 @@ export const Quiz = ({
                     </div>
                 </div>
             </div>
+            <Footer
+                disabled={!selectedOption}
+                status={status}
+                onCheck={() => {}}
+            />
         </>
     );
 };
