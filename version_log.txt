@@ -174,6 +174,13 @@
 - Tested Footer component with various statuses (i.e., correct, wrong, none, completed) to ensure proper functionality and UI
 ```
 
-3 August 2024 - __:__
-- 
+06 Spetember 2024 - 00:00
+- Implemented `onNext` and `onContinue` methods for challenge actions
+- Provided feedback for correct and incorrect answers in challenges
+- Added heart reduction logic for incorrect answers
+- Created server-side actions to track challenge progress and handle errors
+- Implemented UI state handling for pending transitions
+- Added functionality to mark challenges as complete after correct answers
+- Updated database seed script to include multiple challenges for testing
+
 ____
