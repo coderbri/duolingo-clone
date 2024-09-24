@@ -172,7 +172,6 @@
 - Integrated useKey and useMedia hooks for functionality and responsiveness
 - Rendered Button component with dynamic messages and styles
 - Tested Footer component with various statuses (i.e., correct, wrong, none, completed) to ensure proper functionality and UI
-```
 
 06 Spetember 2024 - 00:00
 - Implemented `onNext` and `onContinue` methods for challenge actions
@@ -182,5 +181,14 @@
 - Implemented UI state handling for pending transitions
 - Added functionality to mark challenges as complete after correct answers
 - Updated database seed script to include multiple challenges for testing
+
+24 September 2024 - 16:20
+- Downloaded appropriate sound files for "correct" and "incorrect" feedback from Freesound.org
+- Added the sound files to the `public/` directory of the app
+- Integrated the sound effects into the Quiz component using `useAudio` from `react-use`
+- Configured controls for playing the "correct" and "incorrect" sound effects when the user selects an answer
+- Placed the sound effects in the component's return block so they are rendered in the app
+- Triggered the correct or incorrect sound effect within the `onContinue` method based on the user’s selection
+- Tested sound feedback for both correct and incorrect responses upon selecting challenge options
 
 ____
