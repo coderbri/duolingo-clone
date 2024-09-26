@@ -191,4 +191,12 @@
 - Triggered the correct or incorrect sound effect within the `onContinue` method based on the user’s selection
 - Tested sound feedback for both correct and incorrect responses upon selecting challenge options
 
+26 September 2024 - 17:15
+- Fixed seeded data issues by updating the Seed Script to add more lessons and challenges beyond the first one.
+- Updated the `Quiz` component to properly handle completion of the last challenge by rendering a Finish Screen instead of breaking.
+- Created a celebratory Finish Screen using an SVG image, confetti effect, and sound to signal lesson completion.
+  - Introduced a new `ResultCard` component to display the user's total points and remaining hearts after completing a lesson.
+  - Added the `Confetti` effect and `finish.mp3` audio for enhanced user feedback when a lesson is completed.
+- Implemented a new `<Footer />` component allowing users to reattempt completed lessons with a "Practice Again" feature (still in development).
+
 ____
