@@ -199,4 +199,11 @@
   - Added the `Confetti` effect and `finish.mp3` audio for enhanced user feedback when a lesson is completed.
 - Implemented a new `<Footer />` component allowing users to reattempt completed lessons with a "Practice Again" feature (still in development).
 
+1 October 2024 - 01:25
+- Hearts Modal Creation: Developed a new Hearts Modal component to display when the user runs out of hearts during a challenge.
+- State Management: Created a custom `useHeartsModal` hook using Zustand to manage the modal's open/close state.
+- Component Update: Modified the `hearts-modal.tsx` component, including mascot and dialog text updates, to suit the hearts depletion scenario.
+- App Integration: Integrated the Hearts Modal into the overall app layout, ensuring it's loaded under the `ExitModal`.
+- Quiz Logic Handling: Updated the quiz logic to trigger the Hearts Modal when a user attempts to continue with zero hearts.
+
 ____

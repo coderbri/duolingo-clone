@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 
 import { reduceHearts } from "@/actions/user-progress";
+import { useHeartsModal } from "@/store/use-hearts-modal";
 import { challengeOptions, challenges } from "@/db/schema";
 import { upsertChallengeProgress } from "@/actions/challenge-progress";
 
@@ -35,6 +36,8 @@ export const Quiz = ({
     initialLessonChallenges,
     userSubscription,
 }: Props) => {
+    const { open: openHeartsModal } = useHeartsModal();
+    
     const { width, height } = useWindowSize();
     
     const router = useRouter();
@@ -106,7 +109,8 @@ export const Quiz = ({
                 upsertChallengeProgress(challenge.id)
                     .then((response) => {
                         if (response?.error === "hearts") {
-                            console.error("Missing hearts");
+                            // console.error("Missing hearts");
+                            openHeartsModal();
                             return;
                         }
                         
@@ -126,7 +130,8 @@ export const Quiz = ({
                 reduceHearts(challenge.id)
                     .then((response) => {
                         if (response?.error === "hearts") {
-                            console.error("Missing Hearts");
+                            // console.error("Missing Hearts");
+                            openHeartsModal();
                             return;
                         }
                         
