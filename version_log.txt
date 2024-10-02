@@ -206,4 +206,10 @@
 - App Integration: Integrated the Hearts Modal into the overall app layout, ensuring it's loaded under the `ExitModal`.
 - Quiz Logic Handling: Updated the quiz logic to trigger the Hearts Modal when a user attempts to continue with zero hearts.
 
+2 October 2024 - 02:40
+- Created a new route for accessing practice lessons using `lessonId`
+- Added Practice Modal to notify users of practice session benefits
+- Updated `Quiz` component to trigger modal and reset progress bar in practice mode
+- Ensured users can regain hearts in practice lessons without exceeding limits
+
 ____

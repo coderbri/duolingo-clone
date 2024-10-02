@@ -3,13 +3,14 @@
 import { toast } from "sonner";
 import Image from "next/image";
 import Confetti from "react-confetti";
-import { useAudio, useWindowSize } from "react-use";
+import { useAudio, useWindowSize, useMount } from "react-use";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 
 import { reduceHearts } from "@/actions/user-progress";
 import { useHeartsModal } from "@/store/use-hearts-modal";
 import { challengeOptions, challenges } from "@/db/schema";
+import { usePracticeModal } from "@/store/use-practice-modal";
 import { upsertChallengeProgress } from "@/actions/challenge-progress";
 
 import { Header } from "./header";
@@ -37,6 +38,13 @@ export const Quiz = ({
     userSubscription,
 }: Props) => {
     const { open: openHeartsModal } = useHeartsModal();
+    const { open: openPracticeModal } = usePracticeModal();
+    
+    useMount(() => {
+        if (initialPercentage === 100) {
+            openPracticeModal();
+        }
+    })
     
     const { width, height } = useWindowSize();
     
@@ -59,7 +67,9 @@ export const Quiz = ({
     
     const [lessonId] = useState(initialLessonId);
     const [hearts, setHearts] = useState(initialHearts);
-    const [percentage, setPercentage] = useState(initialPercentage);
+    const [percentage, setPercentage] = useState(() => {
+        return initialPercentage === 100 ? 0 : initialPercentage;
+    });
     const [challenges] = useState(initialLessonChallenges);
     
     const [aciveIndex, setActiveIndex] = useState(() => {
