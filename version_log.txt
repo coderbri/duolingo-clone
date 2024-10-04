@@ -212,4 +212,10 @@
 - Updated `Quiz` component to trigger modal and reset progress bar in practice mode
 - Ensured users can regain hearts in practice lessons without exceeding limits
 
+3 October 2024 - 20:00
+- Created new "/shop" route with async user progress loading
+- Integrated reusable components for consistent UI
+- Added logic to refill hearts with points, disabling button if hearts are full or points insufficient
+- Implemented backend refill method and revalidation of relevant paths
+
 ____
